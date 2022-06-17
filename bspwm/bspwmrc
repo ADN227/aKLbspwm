@@ -1,0 +1,36 @@
+#! /bin/sh
+if [ $(xrandr | grep ' connected' | wc -l) -eq 2 ];
+then 
+    xrandr --output LVDS1 --auto --primary --output HDMI1 --auto --pos $(xrandr | grep 'primary' | awk '{print $4}' | awk -F 'x' '{print $1}')x0
+    bspc monitor HDMI1 -d a b c d e
+    bspc monitor LVDS1 -d 1 2 3 4 5
+else 
+    xrandr --output LVDS1 --auto
+    bspc monitor LVDS1 -d a b c d e
+fi
+
+bspc rule --add Brave-browser:\* desktop=\^5
+bspc rule --add Pavucontrol:\* state=floating
+
+wmname LG3D
+
+bspc config border_width 2
+bspc config window_gap 4
+
+bspc config active_border_color '#932a27'
+bspc config focused_border_color '#ff615b'
+bspc config normal_border_color '#932a27'
+
+
+xset s off s noblank -dpms
+xsetroot -cursor_name left_ptr
+#xsetroot -cursor_name arrow
+setxkbmap dvorak
+
+picom & 
+polybar second &
+polybar principal &
+
+sxhkd &
+
+nitrogen --set-zoom-fill Imágenes/27.jpg --head=0 ; nitrogen --set-zoom-fill Imágenes/23.jpg --head=1

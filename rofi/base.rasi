@@ -1,0 +1,111 @@
+/*
+Tema de rofi:
+- Enfocado a mostrar las ventanas abiernas en una lista 
+- Usando Nerd Font Hack mono
+- Con un fondo de pantalla solido 
+- Y usando un color de resaltado #44ffdf
+*/
+
+configuration {
+	font: "Hack Nerd Font Bold 10";
+	fullscreen: true;
+	hide-scrollbar: true;
+	modi: "window";
+	show-icons: false;
+}
+
+/*Define los colores que usa el tema*/
+* {
+	Background: #131220cc;
+	Border: #B93838;
+	Title: #d34541;
+	Foreground: #c9545a;
+	Transparent: #00000000;
+	Base: #34e2e2;
+	Urgent: #131220;
+}
+
+/* Difine la ubicacion y el tamaño de la ventana */
+window {
+	transparency: "real";
+	background-color: @Transparent;
+	text-color: @Foreground;
+	border: 0;
+	border-radius: 0 0 16 0;
+	location: west;
+	width: 30%;
+	height: 94%;
+	x-offset: 10;
+	y-offset: 11;
+}
+
+prompt {
+	background-color: @Title;
+	text-color: @Background;
+}
+
+inputbar {
+	children: [ prompt ];
+	background-color: @Title;
+	position: center;
+}
+
+/* Define la forma en que se muestran los datos */
+listview {
+	background-color: @Background;
+	columns: 1;
+	cycle: true;
+	dynamic: true;
+	layout: vertical;
+}
+
+/* Define lo que muestra rofi */
+mainbox {
+	background-color: @Transparent;
+	border-color: @Border;
+	border: 2 2 2 8;
+	border-radius: 0 0 16 0;
+	children: [ inputbar,listview ];
+}
+
+/* Define el color de los elementos */
+element {
+	background-color: @Transparent;
+	orientation: vertical;
+	padding: 2;
+	margin: 8 6;
+}
+element-text {
+	background-color: @Transparent;
+	text-color: @Foreground;
+	vertical-align: 0.5;
+}
+element normal.urgent,
+element alternate.urgent {
+	background-color: @Urgent;
+}
+
+/* Define el color de los elementos seleccionados */
+element normal.active,
+element alternate.active {
+	background-color: @Transparent;
+}
+element selected {
+	background-color: @Transparent;
+}
+element-icon selected {
+	background-color: @Transparent;
+}
+element-text selected {
+	background-color: @Transparent;
+	text-color: @Base;
+	vertical-align: 0.5;
+}
+element selected.urgent {
+	background-color: @Urgent;
+}
+
+element selected.active {
+	background-color: @Transparent;
+	color: @Foreground;
+}

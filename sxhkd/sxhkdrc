@@ -1,0 +1,282 @@
+super + control + alt + Escape
+	pkill -USR1 -x sxhkd ; pkill -USR1 -x polybar ; bspc wm -r 
+	
+super + q
+	bspc node -c
+super + alt + q
+	bspc node -k
+
+super + Escape
+	bspc desktop -l next
+super + control + Escape
+	bspc node -t floating
+super + alt + Escape
+	bspc node -t tiled
+
+super + Return
+	tilix 
+super + control + Return
+	sudo tilix
+super + alt + Return
+	alacritty
+
+F3
+	xset dpms s off s noblank -dpms
+F4
+	xset dpms force off
+super + space
+	python ~/Documentos/Betas/python/keyboard.py
+
+super + {1-3}
+	bspc desktop -f '^{1-3}'
+super + {8,9,0}
+	bspc desktop -f '^{3-5}'
+
+super + alt + {1-3}
+	bspc desktop -f '^{6-8}'
+super + alt + {8,9,0}
+	bspc desktop -f '^{8,9,10}'
+
+# cbpk
+#super + control + {1-3}
+#	bspc desktop -f {'^1' ; \
+#	nitrogen --set-zoom-fill --head=0 ~/Imágenes/60.jpg ; \
+#	nitrogen --set-zoom-fill --head=1 ~/Imágenes/61.jpg,'^2' ; \
+#	nitrogen --set-zoom-fill --head=0 ~/Imágenes/61.jpg ; \
+#	nitrogen --set-zoom-fill --head=1 ~/Imágenes/62.jpg,'^3' ;  \
+#	nitrogen --set-zoom-fill --head=0 ~/Imágenes/62.jpg ; \
+#	nitrogen --set-zoom-fill --head=1 ~/Imágenes/63.jpg}
+#super + control + {8,9,0}
+#	bspc desktop -f {'^3' ; \
+#	nitrogen --set-zoom-fill --head=0 ~/Imágenes/63.jpg ; \
+#	nitrogen --set-zoom-fill --head=1 ~/Imágenes/62.jpg,'^4' ; \
+#	nitrogen --set-zoom-fill --head=0 ~/Imágenes/62.jpg ; \
+#	nitrogen --set-zoom-fill --head=1 ~/Imágenes/61.jpg,'^5' ;  \
+#	nitrogen --set-zoom-fill --head=0 ~/Imágenes/61.jpg ; \
+#	nitrogen --set-zoom-fill --head=1 ~/Imágenes/60.jpg}
+
+#super + alt + control + {1-3}
+#	bspc desktop -f {'^6' ; \
+#	nitrogen --set-zoom-fill --head=0 ~/Imágenes/60.jpg ; \
+#	nitrogen --set-zoom-fill --head=1 ~/Imágenes/61.jpg,'^7' ; \
+#	nitrogen --set-zoom-fill --head=0 ~/Imágenes/61.jpg ; \
+#	nitrogen --set-zoom-fill --head=1 ~/Imágenes/62.jpg,'^8' ;  \
+#	nitrogen --set-zoom-fill --head=0 ~/Imágenes/62.jpg ; \
+#	nitrogen --set-zoom-fill --head=1 ~/Imágenes/63.jpg}
+#super + alt + control + {8,9,0}
+#	bspc desktop -f {'^8' ; \
+#	nitrogen --set-zoom-fill --head=0 ~/Imágenes/63.jpg ; \
+#	nitrogen --set-zoom-fill --head=1 ~/Imágenes/62.jpg,'^9' ; \
+#	nitrogen --set-zoom-fill --head=0 ~/Imágenes/62.jpg ; \
+#	nitrogen --set-zoom-fill --head=1 ~/Imágenes/61.jpg,'^10' ;  \
+#	nitrogen --set-zoom-fill --head=0 ~/Imágenes/61.jpg ; \
+#	nitrogen --set-zoom-fill --head=1 ~/Imágenes/60.jpg}
+
+
+# Anime
+#super + control + {1-3}
+#	bspc desktop -f {'^1' ; \
+#	nitrogen --set-zoom-fill --head=0 ~/Imágenes/40.jpg ; \
+#	nitrogen --set-zoom-fill --head=1 ~/Imágenes/50.jpg,'^2' ; \
+#	nitrogen --set-zoom-fill --head=0 ~/Imágenes/41.jpg ; \
+#	nitrogen --set-zoom-fill --head=1 ~/Imágenes/51.jpg,'^3' ;  \
+#	nitrogen --set-zoom-fill --head=0 ~/Imágenes/42.jpg ; \
+#	nitrogen --set-zoom-fill --head=1 ~/Imágenes/52.jpg}
+#super + control + {8,9,0}
+#	bspc desktop -f {'^3' ; \
+#	nitrogen --set-zoom-fill --head=0 ~/Imágenes/42.jpg ; \
+#	nitrogen --set-zoom-fill --head=1 ~/Imágenes/52.jpg,'^4' ; \
+#	nitrogen --set-zoom-fill --head=0 ~/Imágenes/50.jpg ; \
+#	nitrogen --set-zoom-fill --head=1 ~/Imágenes/40.jpg,'^5' ;  \
+#	nitrogen --set-zoom-fill --head=0 ~/Imágenes/51.jpg ; \
+#	nitrogen --set-zoom-fill --head=1 ~/Imágenes/41.jpg}
+
+#super + alt + control + {1-3}
+#	bspc desktop -f {'^6' ; \
+#	nitrogen --set-zoom-fill --head=0 ~/Imágenes/20.jpg ; \
+#	nitrogen --set-zoom-fill --head=1 ~/Imágenes/25.jpg,'^7' ; \
+#	nitrogen --set-zoom-fill --head=0 ~/Imágenes/21.jpg ; \
+#	nitrogen --set-zoom-fill --head=1 ~/Imágenes/26.jpg,'^8' ;  \
+#	nitrogen --set-zoom-fill --head=0 ~/Imágenes/22.jpg ; \
+#	nitrogen --set-zoom-fill --head=1 ~/Imágenes/27.jpg}
+#super + alt + control + {8,9,0}
+#	bspc desktop -f {'^8' ; \
+#	nitrogen --set-zoom-fill --head=0 ~/Imágenes/22.jpg ; \
+#	nitrogen --set-zoom-fill --head=1 ~/Imágenes/27.jpg,'^9' ; \
+#	nitrogen --set-zoom-fill --head=0 ~/Imágenes/23.jpg ; \
+#	nitrogen --set-zoom-fill --head=1 ~/Imágenes/28.jpg,'^10' ;  \
+#	nitrogen --set-zoom-fill --head=0 ~/Imágenes/24.jpg ; \
+#	nitrogen --set-zoom-fill --head=1 ~/Imágenes/29.jpg}
+
+
+# Abstrct: replica
+#super + control + {1-3}
+#	bspc desktop -f {'^1' ; \
+#	nitrogen --set-zoom-fill --head=0 ~/Imágenes/23.jpg ; \
+#	nitrogen --set-zoom-fill --head=1 ~/Imágenes/23.jpg,'^2' ; \
+#	nitrogen --set-zoom-fill --head=0 ~/Imágenes/30.jpg ; \
+#	nitrogen --set-zoom-fill --head=1 ~/Imágenes/30.jpg,'^3' ;  \
+#	nitrogen --set-zoom-fill --head=0 ~/Imágenes/31.jpg ; \
+#	nitrogen --set-zoom-fill --head=1 ~/Imágenes/31.jpg}
+#super + control + {8,9,0}
+#	bspc desktop -f {'^3' ; \
+#	nitrogen --set-zoom-fill --head=0 ~/Imágenes/31.jpg ; \
+#	nitrogen --set-zoom-fill --head=1 ~/Imágenes/31.jpg,'^4' ; \
+#	nitrogen --set-zoom-fill --head=0 ~/Imágenes/32.jpg ; \
+#	nitrogen --set-zoom-fill --head=1 ~/Imágenes/32.jpg,'^5' ;  \
+#	nitrogen --set-zoom-fill --head=0 ~/Imágenes/33.jpg ; \
+#	nitrogen --set-zoom-fill --head=1 ~/Imágenes/33.jpg}
+
+#super + alt + control + {1-3}
+#	bspc desktop -f {'^6' ; \
+#	nitrogen --set-zoom-fill --head=0 ~/Imágenes/23.jpg ; \
+#	nitrogen --set-zoom-fill --head=1 ~/Imágenes/23.jpg,'^7' ; \
+#	nitrogen --set-zoom-fill --head=0 ~/Imágenes/30.jpg ; \
+#	nitrogen --set-zoom-fill --head=1 ~/Imágenes/30.jpg,'^8' ;  \
+#	nitrogen --set-zoom-fill --head=0 ~/Imágenes/31.jpg ; \
+#	nitrogen --set-zoom-fill --head=1 ~/Imágenes/31.jpg}
+#super + alt + control + {8,9,0}
+#	bspc desktop -f {'^8' ; \
+#	nitrogen --set-zoom-fill --head=0 ~/Imágenes/31.jpg ; \
+#	nitrogen --set-zoom-fill --head=1 ~/Imágenes/31.jpg,'^9' ; \
+#	nitrogen --set-zoom-fill --head=0 ~/Imágenes/32.jpg ; \
+#	nitrogen --set-zoom-fill --head=1 ~/Imágenes/32.jpg,'^10' ;  \
+#	nitrogen --set-zoom-fill --head=0 ~/Imágenes/33.jpg ; \
+#	nitrogen --set-zoom-fill --head=1 ~/Imágenes/33.jpg}
+
+
+# Abstract: Diferentes monitores
+super + control + {1-3}
+	bspc desktop -f {'^1' ; \
+	nitrogen --set-zoom-fill --head=0 ~/Imágenes/20.jpg ; \
+	nitrogen --set-zoom-fill --head=1 ~/Imágenes/25.jpg,'^2' ; \
+	nitrogen --set-zoom-fill --head=0 ~/Imágenes/21.jpg ; \
+	nitrogen --set-zoom-fill --head=1 ~/Imágenes/26.jpg,'^3' ;  \
+	nitrogen --set-zoom-fill --head=0 ~/Imágenes/22.jpg ; \
+	nitrogen --set-zoom-fill --head=1 ~/Imágenes/27.jpg}
+super + control + {8,9,0}
+	bspc desktop -f {'^3' ; \
+	nitrogen --set-zoom-fill --head=0 ~/Imágenes/22.jpg ; \
+	nitrogen --set-zoom-fill --head=1 ~/Imágenes/27.jpg,'^4' ; \
+	nitrogen --set-zoom-fill --head=0 ~/Imágenes/23.jpg ; \
+	nitrogen --set-zoom-fill --head=1 ~/Imágenes/28.jpg,'^5' ;  \
+	nitrogen --set-zoom-fill --head=0 ~/Imágenes/24.jpg ; \
+	nitrogen --set-zoom-fill --head=1 ~/Imágenes/29.jpg}
+super + alt + control + {1-3}
+	bspc desktop -f {'^6' ; \
+	nitrogen --set-zoom-fill --head=0 ~/Imágenes/20.jpg ; \
+	nitrogen --set-zoom-fill --head=1 ~/Imágenes/25.jpg,'^7' ; \
+	nitrogen --set-zoom-fill --head=0 ~/Imágenes/21.jpg ; \
+	nitrogen --set-zoom-fill --head=1 ~/Imágenes/26.jpg,'^8' ;  \
+	nitrogen --set-zoom-fill --head=0 ~/Imágenes/22.jpg ; \
+	nitrogen --set-zoom-fill --head=1 ~/Imágenes/27.jpg}
+super + alt + control + {8,9,0}
+	bspc desktop -f {'^8' ; \
+	nitrogen --set-zoom-fill --head=0 ~/Imágenes/22.jpg ; \
+	nitrogen --set-zoom-fill --head=1 ~/Imágenes/27.jpg,'^9' ; \
+	nitrogen --set-zoom-fill --head=0 ~/Imágenes/23.jpg ; \
+	nitrogen --set-zoom-fill --head=1 ~/Imágenes/28.jpg,'^10' ;  \
+	nitrogen --set-zoom-fill --head=0 ~/Imágenes/24.jpg ; \
+	nitrogen --set-zoom-fill --head=1 ~/Imágenes/29.jpg}
+
+
+super + shift + {1-9,0}
+	bspc node -d '^{1-9,10}'
+
+super + apostrophe
+	bspc desktop -f last
+super + period
+	bspc desktop -f older
+
+# focus
+super + a 
+	bspc node -f west
+super + o
+	bspc node -f south
+super + comma
+	bspc node -f north
+super + e
+	bspc node -f east
+
+# move
+super + alt + a
+	bspc node -s west ; bspc node -f west
+super + alt + o 
+	bspc node -s south ; bspc node -f south
+super + alt + comma
+	bspc node -s north ; bspc node -f north
+super + alt + e
+	bspc node -s east ; bspc node -f east
+
+# size 
+super + control + a
+	bspc node -z left -20 0; bspc node -z right -20 0
+super + control + o
+	bspc node -z bottom 0 20; bspc node -z top 0 20
+super + control + comma
+	bspc node -z bottom 0 -20; bspc node -z top 0 -20
+super + control + e
+	bspc node -z left 20 0; bspc node -z right 20 0
+
+
+super + semicolon
+	rofi -show drun -theme gnome
+control + Escape
+	rofi -show window -theme base
+
+super + w
+	vivaldi-stable
+super + v
+	pavucontrol
+super + z
+	brave
+super + t
+	pcmanfm
+super + n
+	teams-for-linux
+super + s
+	code
+super + c
+	seahorse
+super + r
+	libreoffice
+super + l
+	notable
+
+super + alt + w
+	pactl set-sink-volume @DEFAULT_SINK@ -5%
+super + alt + v
+	pactl set-sink-mute @DEFAULT_SINK@ toggle
+super + alt + z
+	pactl set-sink-volume @DEFAULT_SINK@ +5%
+super + alt + t
+	playerctl previous
+super + alt + n
+	playerctl play-pause
+super + alt + s
+	playerctl next
+super + alt + c
+	scrot Capturas/K.jpg
+super + alt + r
+	scrot -d 10 Capturas/K.jpg
+super + alt + l
+	scrot -s Capturas/K.jpg
+
+super + control + w
+	brave --app=https://www.twitch.tv/
+super + control + v
+	brave --app=https://open.spotify.com/
+super + control + z
+	brave --app=https://www.youtube.com/
+super + control + t
+	brave --app=https://twitter.com
+super + control + n
+	brave --app=https://www.facebook.com/
+super + control + s	
+	brave --app=https://www.instagram.com/
+super + control + c
+	brave --app=https://www.wiki.archlinux.org/
+super + control + r
+	brave --app=https://www.reddit.com/
+super + control + l
+	brave --app=https://translate.google.com/
