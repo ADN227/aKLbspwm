@@ -1,4 +1,4 @@
-# Mi configuración de bspwm con Dvorak
+# Mi configuración de bspwm
 
 [![K-022.jpg](https://i.postimg.cc/YqRxJjrj/K-022.jpg)](https://postimg.cc/HVJ5MY7C)
 
